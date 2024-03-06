@@ -17,10 +17,10 @@ const Card = ({element}) => {
       <li className="card-text"><TiTick/> 50GB Storage</li>
       <li className="card-text"><TiTick/> Unlimited Public Projects</li>
       
-      {element.private? <li className="card-text"><TiTick/> Community Access</li>:<li className="card-text text-muted"><GrFormClose/> Community Access</li>}
-      {element.phone? <li className="card-text"><TiTick/> Unlimited Private Projects</li>:<li className="card-text text-muted"><GrFormClose/> Unlimited Private Projects</li>}
-      {element.subdomain? <li className="card-text"><TiTick/>Dedicated Phone Support</li>:<li className="card-text text-muted"><GrFormClose/>Dedicated Phone Support</li>}
-      {element.status? <li className="card-text"><TiTick/>  Free Subdomain</li>:<li className="card-text text-muted"><GrFormClose/> Free Subdomain</li>}
+      {element.access? <li className="card-text"><TiTick/> Community Access</li>:<li className="card-text text-muted"><GrFormClose/> Community Access</li>}
+      {element.private? <li className="card-text"><TiTick/> Unlimited Private Projects</li>:<li className="card-text text-muted"><GrFormClose/> Unlimited Private Projects</li>}
+      {element.phone? <li className="card-text"><TiTick/>Dedicated Phone Support</li>:<li className="card-text text-muted"><GrFormClose/>Dedicated Phone Support</li>}
+      {element.subdomain? <li className="card-text"><TiTick/>  Free Subdomain</li>:<li className="card-text text-muted"><GrFormClose/> Free Subdomain</li>}
 
       {element.status? <li className="card-text"><TiTick/>  Monthly Status Reports</li>:<li className="card-text text-muted"><GrFormClose/> Monthly Status Reports</li>}
     </ul>
