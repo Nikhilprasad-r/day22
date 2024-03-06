@@ -16,7 +16,7 @@ const Card = ({element}) => {
       <li className="card-text"><TiTick/>{element.users} Users</li>
       <li className="card-text"><TiTick/> 50GB Storage</li>
       <li className="card-text"><TiTick/> Unlimited Public Projects</li>
-      <li className="card-text"><TiTick/> Community Access</li>
+      
       {element.private? <li className="card-text"><TiTick/> Community Access</li>:<li className="card-text text-muted"><GrFormClose/> Community Access</li>}
       {element.phone? <li className="card-text"><TiTick/> Unlimited Private Projects</li>:<li className="card-text text-muted"><GrFormClose/> Unlimited Private Projects</li>}
       {element.subdomain? <li className="card-text"><TiTick/>Dedicated Phone Support</li>:<li className="card-text text-muted"><GrFormClose/>Dedicated Phone Support</li>}
