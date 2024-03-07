@@ -15,7 +15,11 @@ const data =[{
   phone:false,
   subdomain:false,
   status:false
-},{
+},
+
+
+
+{
   title:'PLUS',
   cost:9,
   users:'5',
@@ -51,7 +55,7 @@ function App() {
       
      
       { data.map((element)=>{
-        console.log(element);
+        
         return(
           <Card element={element}/>
         )
@@ -63,3 +67,8 @@ function App() {
 }
 
 export default App
+
+const add = (a,b)=>{ return a+b};
+
+add(6,7)
+add(8,9)

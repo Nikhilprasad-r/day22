@@ -12,10 +12,10 @@ const Card = ({element}) => {
     <h1 className='card-title '>${element.cost}<span className='text-muted'>/month</span></h1>
     </div>
     <ul className="card-body">
-      
+    
     <li className="card-text"><TiTick/>{element.users} Users</li>
 
-    {element.storage? <li className="card-text"><TiTick/> 50GB Storage</li>:<li className="card-text text-muted"><GrFormClose/> 50GB Storage</li>}
+    {element.storage ? <li className="card-text"><TiTick/> 50GB Storage</li> : <li className="card-text text-muted"><GrFormClose/> 50GB Storage</li>}
 
     {element.unlimited? <li className="card-text"><TiTick/> Unlimited Public Projects</li>:<li className="card-text text-muted"><GrFormClose/> Unlimited Public Projects</li>}
 
